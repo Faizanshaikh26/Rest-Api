@@ -94,6 +94,7 @@ const newAlbum = async (req, res) => {
   }
 };
 
+
 const searchAlbums = async (req, res) => {
   try {
     const searchTerm = req.query.q;

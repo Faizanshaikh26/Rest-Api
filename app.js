@@ -30,9 +30,13 @@ app.use((err, req, res, next) => {
 
 app.use('/api', playlistRoutes);
 app.get("/", albumsControllers.allAlbums);
+app.get("/testing", albumsControllers.allAlbums);
+
 app.get("/api/search", albumsControllers.searchAlbums);
 app.get("/api/:id", albumsControllers.allAlbumsById);
 app.post("/api/albums", albumsControllers.newAlbum);
+app.post("/api/testing", albumsControllers.newAlbum);
+
 app.put("/api/:id", albumsControllers.updateAlbum);
 app.delete("/api/:id", albumsControllers.deleteAlbum);
 
